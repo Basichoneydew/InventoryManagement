@@ -8,6 +8,7 @@ The "Add Item By Taking A Picture" button is not functioning correctly when acce
 You may need to run the following commands in your terminal:
 
 npm install @google-cloud/vision
+and
 npm install react-camera-pro
 
 First, run the development server:
