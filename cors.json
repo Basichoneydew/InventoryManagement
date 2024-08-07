@@ -1,7 +1,7 @@
 [
     {
         "origin": [
-            "http://localhost:3000"
+            "https://inventory-management-rosy-omega.vercel.app/"
         ],
         "method": [
             "GET",
