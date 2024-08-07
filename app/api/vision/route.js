@@ -33,9 +33,24 @@ export async function POST(req) {
         const item = labels[0]?.description || 'Unknown item';
         console.log('Detected item:', item);
 
+        // Add CORS headers
+        const headers = {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*', // Adjust this to your specific domain for better security
+            'Access-Control-Allow-Methods': 'POST',
+        };
+
+        if (req.method === 'OPTIONS') {
+            // Handle preflight request
+            return new Response(null, {
+                status: 204,
+                headers,
+            });
+        }
+
         return new Response(JSON.stringify({ item }), {
             status: 200,
-            headers: { 'Content-Type': 'application/json' },
+            headers,
         });
     } catch (error) {
         console.error('Error calling Vision API:', error);
