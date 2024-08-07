@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+You may need to run the following commands in your terminal:
+
+npm install @google-cloud/vision
+npm install react-camera-pro
+
 First, run the development server:
 
 ```bash
