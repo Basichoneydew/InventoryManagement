@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+**Disclaimer:**  
+The "Add Item By Taking A Picture" button is not functioning correctly when accessed via the Vercel link, but it works properly on localhost. This issue will be fixed at a later date.
+
 ## Getting Started
 
 You may need to run the following commands in your terminal:
